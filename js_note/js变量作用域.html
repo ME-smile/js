@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js变量作用域</title>
+    <script>
+        window.onload=function(){
+        // var oBtn=document.getElementsByTagName("input");
+        // for(var i=0;i<oBtn.length;i++){
+        //     (function(i){
+        //         oBtn[i].onclick=function(){
+        //          alert(i);
+        //         }
+        //     })(i)
+        // }
+        function test(){
+            var i=1;
+            
+        }
+        test();
+    };
+    </script>
+</head>
+<body>
+    <form action="">
+        <input type="button" value="按钮1">
+        <input type="button" value="按钮2">
+        <input type="button" value="按钮3">
+    </form>
+</body>
+</html>

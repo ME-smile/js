@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字符串方法</title>
+    <script>
+        /*字符串的截取
+        -------------------------------------------------------------------------
+            slice(startIndex,endIndex)
+
+            slice()
+            1.参数为空（不传递任何参数），默认从第0个位置开始截取一直截取到末尾
+            2.只有一个参数：
+
+                slice(startIndex) 
+                startIndex>0 从第 startIndex个位置截取到末尾
+                    startIndex>length 返回空
+                startIndex<0 从第startIndex+length个位置截取到末尾
+                    |startIndex|>length 相当于该参数为0 
+            3.两个参数：
+                slice(startIndex,endIndex) 
+                    截取第[startIndex,endIndex)位置的字符串
+                        如果endIndex<0 endIndex=length+endIndex 
+                        如果endIndex>length endIndex=length
+            如果endIndex<startIndex 返回空
+        ----------------------------------------------------------------------
+            subString(startIndex,endIndex)
+             1.参数为空（不传递任何参数），默认从第0个位置开始截取一直截取到末尾
+             2.只有一个参数：
+                slice(startIndex) 
+                startIndex>0 从第 startIndex个位置截取到末尾
+                    startIndex>length  startIndex=length 返回空
+                startIndex<0  则startIndex=0 从第 0个位置截取到末尾
+                    startIndex>length  startIndex=length 返回空
+             3.两个参数：
+                slice(startIndex,endIndex) 
+                    截取第[startIndex,endIndex)位置的字符串
+                        
+            如果endIndex<startIndex 则交换位置
+        */
+       
+       str='980125';
+       alert(str.slice(10))//
+
+    </script>
+</head>
+<body>
+</body>
+</html>
